@@ -20,4 +20,4 @@ const initialState = {
 
   export default counterslice.reducer;
 
-  export const {increment} = counterslice.actions;
+  export const {increment, decrement} = counterslice.actions;

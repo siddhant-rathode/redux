@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { increment } from './store/reducers/counterSlice'
+import { asyndecrement } from './store/actions/counterAction'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -11,7 +12,7 @@ const App = () => {
     dispatch(increment(value + 1))
   }
   const DecrementHandler = () => {
-    dispatch(increment(value - 1))
+    dispatch(asyndecrement(value - 1))
   }
   
   return (
